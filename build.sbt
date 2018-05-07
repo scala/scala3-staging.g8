@@ -4,7 +4,7 @@
 lazy val root = project
   .in(file("."))
   .settings(
-    name := "dotty-template",
+    name := "dotty-staged-template",
     test in Test := {
       val _ = (g8Test in Test).toTask("").value
     },
