@@ -8,6 +8,6 @@ import org.junit.Assert._
 class Test1 {
   @Test def t1(): Unit = {
     val code = '(println("foo"))
-    assertEquals("println(\"foo\")", code.show)
+    assertEquals("scala.Predef.println(\"foo\")", code.show)
   }
 }
