@@ -9,15 +9,15 @@ object Main {
 
   def main(args: Array[String]): Unit = {
     val square = stagedPower(2)
-    println(s"3^2 = " + square(3))
-    println(s"4.1^2 = " + square(4.1))
+    println("3^2 = " + square(3))
+    println("4.1^2 = " + square(4.1))
     println()
     val cube = stagedPower(3)
-    println(s"2.4^3 = " + cube(2.4))
+    println("2.4^3 = " + cube(2.4))
     println()
 
     val toTheFourth = stagedPower(4)
-    println(s"3^4 = " + toTheFourth(3))
+    println("3^4 = " + toTheFourth(3))
     println()
   }
 
