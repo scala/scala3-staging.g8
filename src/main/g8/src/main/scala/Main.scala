@@ -25,7 +25,7 @@ object Main {
     // Code representing the labmda where the recursion is unrolled based on the value of n
     val code = '{ (x: Double) => ~powerCode(n, '(x)) }
 
-    println(s"staged power for n=$n:")
+    println(s"staged power for n=" + n + ":")
     println(code.show)
 
     // Evaluate the contents of the code and return it's value
