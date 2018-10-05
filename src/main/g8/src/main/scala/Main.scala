@@ -1,11 +1,11 @@
 
-// Needed to run or show quotes
-import dotty.tools.dotc.quoted.Toolbox._
-
 // Import Expr and some extension methods
 import scala.quoted._
 
 object Main {
+
+  // Needed to run or show quotes
+  implicit val toolbox: scala.quoted.Toolbox = scala.quoted.Toolbox.make
 
   def main(args: Array[String]): Unit = {
     val square = stagedPower(2)
