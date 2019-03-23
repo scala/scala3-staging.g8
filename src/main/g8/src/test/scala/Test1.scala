@@ -1,14 +1,18 @@
 
+import scala.quoted._
+
 import org.junit.Test
 import org.junit.Assert._
 
 class Test1 {
 
   // Needed to run or show quotes
-  implicit val toolbox: scala.quoted.Toolbox = scala.quoted.Toolbox.make
+  given as scala.quoted.Toolbox = scala.quoted.Toolbox.make(getClass.getClassLoader)
+
+  private def code given QuoteContext = '{ identity("foo") }
 
   @Test def t1(): Unit = {
-    val code = '(println("foo"))
-    assertEquals("scala.Predef.println(\"foo\")", code.show)
+    assertEquals("scala.Predef.identity[java.lang.String](\"foo\")", withQuoteContext(code.show))
+    assertEquals("foo", run(code))
   }
 }
