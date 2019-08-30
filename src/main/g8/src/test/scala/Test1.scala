@@ -1,5 +1,6 @@
 
 import scala.quoted._
+import scala.quoted.staging.{run, withQuoteContext, Toolbox}
 
 import org.junit.Test
 import org.junit.Assert._
@@ -7,7 +8,7 @@ import org.junit.Assert._
 class Test1 {
 
   // Needed to run or show quotes
-  given as scala.quoted.Toolbox = scala.quoted.Toolbox.make(getClass.getClassLoader)
+  given as Toolbox = Toolbox.make(getClass.getClassLoader)
 
   private def code given QuoteContext = '{ identity("foo") }
 

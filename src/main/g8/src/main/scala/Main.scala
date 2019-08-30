@@ -1,11 +1,12 @@
 
 // Import Expr and some extension methods
 import scala.quoted._
+import scala.quoted.staging.{run, withQuoteContext, Toolbox}
 
 object Main {
 
   // Needed to run or show quotes
-  given as scala.quoted.Toolbox = scala.quoted.Toolbox.make(getClass.getClassLoader)
+  given as Toolbox = Toolbox.make(getClass.getClassLoader)
 
   def main(args: Array[String]): Unit = {
     val square = stagedPower(2)
