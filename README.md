@@ -1,6 +1,6 @@
 dotty.g8: simple dotty-compiled sbt project template
 =================
-[![Build Status](https://travis-ci.org/lampepfl/dotty-quoted.g8.svg?branch=master)](https://travis-ci.org/lampepfl/dotty-quoted.g8/)
+[![Build Status](https://travis-ci.org/lampepfl/dotty-staging.g8.svg?branch=master)](https://travis-ci.org/lampepfl/dotty-staging.g8)
 
 A [Giter8][g8] template for a minimal [Dotty] staging project.
 
