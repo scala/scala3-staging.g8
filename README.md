@@ -8,7 +8,7 @@ Template usage
 --------------
 Using `sbt` version `1.1.5+`, do:
 ```
-sbt new lampepfl/dotty-quoted.g8
+sbt new lampepfl/dotty-staging.g8
 ```
 in the folder where you want to clone the template.
 
