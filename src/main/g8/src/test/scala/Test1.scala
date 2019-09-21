@@ -8,9 +8,9 @@ import org.junit.Assert._
 class Test1 {
 
   // Needed to run or show quotes
-  given as Toolbox = Toolbox.make(getClass.getClassLoader)
+  given Toolbox = Toolbox.make(getClass.getClassLoader)
 
-  private def code given QuoteContext = '{ identity("foo") }
+  private def code(given QuoteContext) = '{ identity("foo") }
 
   @Test def t1(): Unit = {
     assertEquals("scala.Predef.identity[java.lang.String](\"foo\")", withQuoteContext(code.show))
