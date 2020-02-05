@@ -33,8 +33,8 @@ object Main {
     run(code)
   }
 
-  def powerCode(n: Int, x: Expr[Double])(given QuoteContext): Expr[Double] =
-    if (n == 0) 1.0.toExpr // toExpr lifts 1.0 to '{1.0}
+  def powerCode(n: Int, x: Expr[Double])(given ctx: QuoteContext): Expr[Double] =
+    if (n == 0) Expr(1.0) // Expr() lifts 1.0 to '{1.0}
     else if (n == 1) x // optimization to not generate x * 1
     else if (n < 0) throw new Exception("Negative powers not implemented. Left as a small exercise. Dont be shy, try it out.")
     else if (n == 2) '{ \$x * \$x } // optimization to not generate { val y = x; y * y }
