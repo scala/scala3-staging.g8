@@ -1,4 +1,4 @@
-## sbt project compiled with Dotty
+## Dotty Staging template project
 
 ### Usage
 
