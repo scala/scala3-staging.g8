@@ -25,3 +25,9 @@ classes/
 .idea
 .idea_modules
 /.worksheet/
+
+# metals
+.metals
+
+# vscode
+.vscode
