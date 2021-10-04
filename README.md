@@ -1,4 +1,4 @@
-dotty-staging.g8: Dotty Staging template project
+scala3-staging.g8: Dotty Staging template project
 =================
 [![Build Status](https://travis-ci.com/scala/scala3-staging.g8.svg?branch=master)](https://travis-ci.com/scala/scala3-staging.g8)
 
