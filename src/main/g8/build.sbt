@@ -10,6 +10,6 @@ lazy val root = project
 
     libraryDependencies ++= Seq(
       "org.scala-lang" %% "scala3-staging" % scala3Version,
-      "com.novocode" % "junit-interface" % "0.11" % "test"
+      "com.github.sbt" % "junit-interface" % "0.13.2" % "test"
     )
   )
