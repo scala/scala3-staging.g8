@@ -1,4 +1,4 @@
-scala3-staging.g8: Dotty Staging template project
+scala3-staging.g8: Scala 3 Staging template project
 =================
 [![Continuous Integration](https://github.com/scala/scala3-staging.g8/actions/workflows/ci.yml/badge.svg)](https://github.com/scala/scala3-staging.g8/actions/workflows/ci.yml)
 
