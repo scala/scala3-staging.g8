@@ -1,7 +1,7 @@
 // This build is for this Giter8 template.
 // To test the template run `g8` or `g8Test` from the sbt session.
 // See http://www.foundweekends.org/giter8/testing.html#Using+the+Giter8Plugin for more details.
-lazy val scalaVersions = Seq("2.12.16")
+lazy val scalaVersions = Seq("2.12.19")
 lazy val root = project
   .in(file("."))
   .settings(
@@ -14,7 +14,7 @@ lazy val root = project
     crossScalaVersions := scalaVersions
   )
 
-ThisBuild / githubWorkflowJavaVersions := Seq("8", "11", "17").map(JavaSpec.temurin)
+ThisBuild / githubWorkflowJavaVersions := Seq("8", "11", "17", "21").map(JavaSpec.temurin)
 ThisBuild / githubWorkflowScalaVersions := scalaVersions
 ThisBuild / githubWorkflowBuildPostamble := Seq(
   // This runs the template with the default parameters, and runs test within the templated app.
