@@ -9,7 +9,7 @@ lazy val root = project
     scalaVersion := scala3Version,
 
     libraryDependencies ++= Seq(
-      "org.scala-lang" %% "scala3-staging" % scala3Version,
+      "org.scala-lang" %% "scala3-staging" % scalaVersion.value,
       "com.github.sbt" % "junit-interface" % "0.13.3" % "test"
     )
   )
